@@ -3,3 +3,10 @@
     flex-direction: column;
     align-items: center;
 }
+
+.app .add-btn {
+    height: 40px;
+    border: none;
+    margin-top: 20px;
+    font-size: medium;
+}
