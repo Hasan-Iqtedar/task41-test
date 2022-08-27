@@ -1,9 +1,8 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { GlobalContext } from "../context/FieldContext";
 import "../styles/inputField.css";
 
 const InputField = (props) => {
-  // const [text, setText] = useState("");
   const { updateField } = useContext(GlobalContext);
 
   const updateTextField = (e) => {
@@ -12,12 +11,7 @@ const InputField = (props) => {
 
   return (
     <>
-      <input
-        type="text"
-        placeholder="Enter text"
-        // value={text}
-        onChange={updateTextField}
-      />
+      <input type="text" placeholder="Enter text" onChange={updateTextField} />
     </>
   );
 };

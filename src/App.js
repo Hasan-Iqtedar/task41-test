@@ -5,15 +5,6 @@ import "./styles/app.css";
 
 function App() {
   const { fields, addField } = useContext(GlobalContext);
-  // const [fields, setFields] = useState([
-  //   { id: 0, text: "" },
-  //   { id: 1, text: "" },
-  // ]);
-
-  // const addField = () => {
-  //   const updatedFields = [...fields, { id: fields.length, text: "" }];
-  //   setFields(updatedFields);
-  // };
 
   const logData = () => {
     console.log(fields);
